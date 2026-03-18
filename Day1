@@ -1,0 +1,97 @@
+# variable How to declare the variable
+a=10
+b=20
+sum = a+b
+print("sum=",sum)
+
+# typecasting
+a="10"
+print(type(a))
+b="20"
+print(type(b))
+c=int(a)+int(b)
+print(c)
+
+
+# User input
+a=int(input("Enter the no"))
+b=int(input("Enter the no"))
+c=a+b
+print(a)
+print(b)
+print(c)
+
+# FInd your current age
+birth_year =int(input("enter the no")) 
+current_year =int(input("enter the no"))
+
+age = current_year - birth_year
+print("Your age is:", age)
+
+
+# convert minuts to hours /60
+
+minutes = float(input("Enter minutes: "))
+hours = minutes / 60
+
+print("Hours:", hours)
+
+# convert km to meters 
+km = float(input("Enter kilometers: "))
+meters = km * 1000
+
+print("Meters:", meters)
+
+# find sqr and cube
+num=10
+cub = num * num* num
+sqr= num*num
+print(sqr)
+
+
+# calculate simple interest
+# calculate area of circle, rectangle
+
+
+# Calculate Simple Interest
+
+P = float(input("Enter Principal amount: "))
+R = float(input("Enter Rate of interest: "))
+T = float(input("Enter Time (years): "))
+
+SI = (P * R * T) / 100
+
+print("Simple Interest is:", SI)
+
+
+
+# Calculate area of a circle
+
+import math
+
+r = float(input("Enter radius: "))
+
+area = math.pi * r * r
+
+print("Area of circle:", area)
+
+
+
+
+# Calculate area of a rectangle
+
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+
+area = length * width
+
+print("Area of rectangle:", area)
+
+
+print("HELLO WORLD")
+
+number=5
+if number %2 ==0:
+    print("even no")
+else:
+    print("odd")
