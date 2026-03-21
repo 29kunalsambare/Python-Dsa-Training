@@ -1,0 +1,74 @@
+# function:
+
+# def add():
+#     a=10
+#     b=20
+#     c=a+b
+#     print(c)
+
+# add()
+
+
+# with argument
+# def addition(a,b):
+#     x=a+b
+#     print("Addition = ",x)
+# addition(10,30)
+# with argument with return
+def addition2(a,b):
+    return a+b
+print(addition2(50,60))
+
+# List
+list=[10,20,30,40,50]
+# if else condition
+target=30
+if target in list:
+    print("found at index:",list.index(target))
+else:
+    print("not found")
+
+
+# Binary search
+def binary_search(list,target):
+    low=0
+    high=len(list)-1
+    while low<=high:
+        mid=(low+high)//2
+        if  list[mid]==target:
+            return mid
+        elif list[mid]<target:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1            
+
+
+
+
+class Solution(object):
+    def missingNumber(self, nums):
+        nums.sort()
+        for i in range(len(nums)):
+            if nums[i]!=i:
+                return i
+        return len(nums)
+
+        # leetcode 704
+
+class Solution(object):
+    def search(self, nums, target):
+        low = 0
+        high = len(nums) - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                low = mid + 1
+            else:
+                high = mid - 1
+
+        return -1
