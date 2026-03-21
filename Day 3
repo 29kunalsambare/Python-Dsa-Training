@@ -1,0 +1,61 @@
+
+# 1st Approach
+
+if __name__ == '__main__':
+    n = int(input().strip())
+if n%2!=0:
+    print("Weird")
+elif n%2==0 and 2<=n<=5:
+    print("Not Weird")
+elif n%2==0 and 6<=n<=20:
+    print("Weird")
+else:
+    print("Not Weird")
+
+# 2nd Approach
+
+    import sys
+n=int(input())
+if n%2==1 or n in range(5,21):
+    print("Weird")
+else:
+    print("Not Weird")
+
+   # 3rd approach:
+
+n=int(input())
+if n%2!=0:
+    print("Weird")
+    exit()
+if 2<=n<=5:
+    print("Not Weird")
+elif 6<=n<=20:
+    print("Weird")
+else:
+    print("Not Weird")
+
+   # leap year:
+
+def is_leap(year):
+    leap = False
+    if year % 400==0:
+        return True
+    if year %100==0:
+        return False
+    if year %4==0:
+        return True
+     
+    # Write your logic here
+   
+    return leap
+
+year = int(input())
+print(is_leap(year))
+
+# leap year  2nd approch:
+def is_leap(year):
+    return (year%4==0 and year%100!=0) or (year %400==0)
+
+
+year = int(input())
+print(is_leap(year))
