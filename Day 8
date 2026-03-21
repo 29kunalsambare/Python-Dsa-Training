@@ -1,0 +1,49 @@
+# Linear search with while
+def linear_search(list, target):
+    i=0
+    while i < len(list):
+        if list[i] == target:
+            return i
+        i += 1
+    return -1
+list = [1, 2, 3, 4, 5]
+target = int(input("Enter the target number: "))
+index = linear_search(list, target)
+print("Element found at index:", index)
+
+
+
+# Linear search
+def linear_search(list, target):
+    for i in range(len(list)):
+        if list[i] == target:
+            return i
+    return -1   
+list = [1, 2, 3, 4, 5]
+target = int(input("Enter the target number: "))
+index=linear_search(list, target)
+print("Element found at index:", index) 
+
+
+# Linear search with without function
+def linear_search(list, target):
+    i=0
+    while i < len(list):
+        if list[i] == target:
+            return i
+        i += 1
+    return -1
+list = [1, 2, 3, 4, 5]
+target = int(input("Enter the target number: "))            
+index = linear_search(list, target)
+print("Element found at index:", index) 
+
+
+
+# If else condition for linear search without function
+list = [10, 20, 30, 40, 50]
+target = 30
+if target in list:
+    print("Element found at index:", list.index(target))
+else:
+    print("Element not found")
